@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>devKeed Projects</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap&family=Montserrat+Alternates:wght@500s&family=Yeon+Sung&display=swap" rel="stylesheet">
+</head>
+
+<style media="screen">
+
+	body{
+		background-color: #140345;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	main{
+		width: 80%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0%;
+		text-align: center;
+	}
+
+	h1{
+		font-size: 90px;
+		color: #F6CA13;
+		text-shadow: 2px 2px 4px #000;
+		margin-top: 1%
+	}
+
+	h3{
+		font-size: 30px;
+		color: white;
+		 text-shadow: 2px 2px 4px #000;
+	}
+
+	button{
+		font-size: 30px;
+		padding: 10px 20px;
+		margin: auto 10px;
+		border-radius: 10px;
+		color: #140345 ;
+		border: none;
+		background-color: #F6CA13;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		font-family: 'Yeon Sung', cursive;
+		margin-bottom: 8px;
+	}
+
+	button:hover{
+		background-color: #D8A707 ;
+		color: #090024 ;
+	}
+
+	#animation-container {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: -1;
+	  background-size: cover;
+	}
+
+	#animation-container {
+		background-image: url('file:///C:/Users/user/Downloads/image-removebg-preview%20(36).png');
+		animation: move-image 10s linear infinite;
+	}
+
+	@keyframes move-image {
+		0% {
+		background-position: 0 0;
+		}
+		100% {
+		background-position: 1000px 0;
+		}
+	}
+
+	.circle {
+		 border-radius: 50%; /* Make the border radius 50% of the width and height to create a circle */
+		 width: 200px; /* Set the width of the element */
+		 height: 200px; /* Set the height of the element */
+		 overflow: hidden; /* Hide any content that overflows the element */
+		 margin: 40px auto;
+		 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		 border-color:#F6CA13;
+		 border: 4px solid #F6CA13;
+	 }
+
+	 #headshot{
+		 max-width: 100%;
+	 }
+
+</style>
+
+
+	<body>
+		<main>
+			<div class="circle">
+				<img id="headshot" src="https://lh3.googleusercontent.com/lDVaFG0DSRZQ8-nJHdiUOgcObBS0jDvaX9U3z-T8BYjKJ21F_6lDexYNMJxmd9Nw_4OTJlmTAtydXMlB53CaNdKzW8Ig9WmNe2q9IlJcQNezK-chMcscB1lp9Lzr6N69THPxvqm8rE3gdiTA2yNsTiaQbYMdOjW2syn4ncMwQScCoJ92ny0I02wRNmSmni37R5ZA5hJLV21M0qEyuCwh0ACOT3TYMuByTz7X06dz8M5ZtzNENcizjQ4K9xFbMFd4LGbeu3pLPuJnobtWztlrZhCYzw1i5U4pfEbdA539lhs839-ayQin3PU3avioOT4nUl8qv57gsjbQ6iDxznMPpxB9nwP2yhBRF5FA7foIMUQO4SaD9JtycSl8McCZYGrZfy0o7N8jdpFrms_aqGBLAznHNsc5SjsTFYTAQ8A-ZnX5lDL_Gh1cXXvVykuaq3Kyhgmb1KT8wpO6uPOmor6B91ZpFa0EBAmBllkUk0u6ChsINR2cwwZSNevau7RsUQnbNxIzYoqk6be1cvx9sP_onC0PtkSQPNfg5hrJtrGjXWufzvmhOZ_7geIyEG4TN9wb6G5ka1ZdnrVARVwK1i8MIcNsB1TnBnPRNSzOVWJa0ZQ713xhrjwxdCwun1aUSovoPlySYwzKvYWyzOwj0p9zrQ0VQxjpEmsw7vxe5C4nGFt5FIy5E3SpqEHgi6dJi1p8Hdvc3R_DVTjmuqYqFvBRrm4xth35bcs8K0wgCbKJzJpojSJGsz1xLmP-fqnXsEFShEnb2DFTYAwUlrzsJvbHYNk92CahaKXKfZPDI-M2A_pHktv1-v1cJX3J_EZICRW2v3hPzITXSmgpAjGlqWnI7hlAFiJ0fdQGfRnETImxkM6y2_ByUjn785rdU3DcGZp8Mq4KEX1ZhhDjtLOC94-TfEdLjLauxf_Cn0VM9OarDGN_=w493-h657-no?authuser=0" alt="My Image" >
+			</div>
+
+				<h1 style="font-family: 'Rubik Bubbles', cursive;">#devKeed</h1>
+
+				<div class="container">
+					<h3 style="font-family: 'Yeon Sung', cursive;">Which of devKeed's project do you want to see?</h3>
+
+					<div class="button-section">
+						<button>GP Calculator</button>
+						<button onclick="goToListify()">Listify</button>
+						<button>Note Taker</button>
+					</div>
+				</div>
+
+				<div id="animation-container"></div>
+
+		</main>
+
+	</body>
+
+	<script type="text/javascript">
+
+		// to make sure the buttons lead somewhere...I used window.location in the function
+		function goToListify(){
+			window.location = "listify.html"
+		}
+
+	</script>
+
+
+</html>
